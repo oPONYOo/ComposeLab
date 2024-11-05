@@ -11,6 +11,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.composelab.animation.AnimatedVisibilityDemo
+import com.example.composelab.animation.CrossfadeAnimationDemo
+import com.example.composelab.animation.InfiniteRepeatableDemo
+import com.example.composelab.animation.MultipleValuesAnimationDemo
+import com.example.composelab.animation.SizeChangeAnimationDemo
+import com.example.composelab.animation.StateChangeDemo
 import com.example.composelab.ui.theme.ComposeLabTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,10 +26,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeLabTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+//                    StateChangeDemo()
+//                    MultipleValuesAnimationDemo()
+//                    AnimatedVisibilityDemo()
+//                    SizeChangeAnimationDemo()
+//                    CrossfadeAnimationDemo()
+//                    InfiniteRepeatableDemo()
                 }
             }
         }
